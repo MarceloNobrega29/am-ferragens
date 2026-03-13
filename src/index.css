@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --blue:        #001250;
+  --blue-dark:   #000c3a;
+  --blue-light:  #1a2e7a;
+  --yellow:      #FCBC37;
+  --yellow-dark: #e0a820;
+  --white:       #ffffff;
+  --off-white:   #F5F6FA;
+  --dark:        #0a0f1e;
+  --gray:        #6b7280;
+  --gray-light:  #e4e8f0;
+  --font-body:   'Outfit', sans-serif;
+  --radius:      14px;
+  --transition:  0.28s cubic-bezier(0.4,0,0.2,1);
+  --shadow-sm:   0 2px 12px rgba(0,18,80,0.08);
+  --shadow-md:   0 8px 32px rgba(0,18,80,0.14);
+  --shadow-lg:   0 20px 60px rgba(0,18,80,0.18);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: var(--font-body);
+  background: var(--white);
+  color: var(--dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+button { cursor: pointer; border: none; background: none; }
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+img { display: block; max-width: 100%; }
+::selection { background: var(--yellow); color: var(--blue-dark); }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--off-white); }
+::-webkit-scrollbar-thumb { background: var(--blue); border-radius: 99px; }
